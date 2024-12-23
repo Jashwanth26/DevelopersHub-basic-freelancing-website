@@ -56,7 +56,7 @@ const Indprofile = () => {
         };
 
         axios
-          .post('https://developers-hub-basic-freelancer-website-backend-cr4r.vercel.app/api/review/addreview', review, {
+          .post('https://developers-hub-backend.vercel.app/api/review/addreview', review, {
             headers: {
               'x-token': localStorage.getItem('token'),
             },

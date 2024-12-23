@@ -30,7 +30,7 @@ export default function ResetPassword() {
         const requestData = { token, ...data };
 
         axios
-            .post('https://developers-hub-basic-freelancer-website-backend-cr4r.vercel.app/api/user/reset-password', requestData)
+            .post('https://developers-hub-backend.vercel.app/api/user/reset-password', requestData)
             .then(() => {
                 setSuccess('Password changed successfully');
                 setError('');

@@ -7,13 +7,13 @@ const Myprofile = () => {
   const [review, setReview] = useState([]);
 
   useEffect(() => {
-    axios.get('https://developers-hub-basic-freelancer-website-backend-cr4r.vercel.app/api/user/myprofile', {
+    axios.get('https://developers-hub-backend.vercel.app/api/user/myprofile', {
       headers: {
         'x-token': localStorage.getItem('token'),
       },
     }).then(res => setData(res.data));
 
-    axios.get('https://developers-hub-basic-freelancer-website-backend-cr4r.vercel.app/api/review/myreview', {
+    axios.get('https://developers-hub-backend.vercel.app/api/review/myreview', {
       headers: {
         'x-token': localStorage.getItem('token'),
       },

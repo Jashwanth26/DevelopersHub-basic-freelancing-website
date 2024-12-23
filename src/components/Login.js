@@ -15,7 +15,7 @@ export default function Login() {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        axios.post('https://developers-hub-basic-freelancer-website-backend-cr4r.vercel.app/api/user/login', data)
+        axios.post('https://developers-hub-backend.vercel.app/api/user/login', data)
             .then(res => {
                 localStorage.setItem('token', res.data.token);
                 setAuth(true);

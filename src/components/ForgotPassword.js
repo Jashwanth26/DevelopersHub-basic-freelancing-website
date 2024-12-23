@@ -14,7 +14,7 @@ export default function ForgotPassword() {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        axios.post('https://developers-hub-basic-freelancer-website-backend-cr4r.vercel.app/api/user/forgot-password', data)
+        axios.post('https://developers-hub-backend.vercel.app/api/user/forgot-password', data)
             .then((response) => {
                 const { token } = response.data; 
                 localStorage.setItem('forgotPasswordToken', token); 

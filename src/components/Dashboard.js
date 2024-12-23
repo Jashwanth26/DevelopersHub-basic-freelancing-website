@@ -6,7 +6,7 @@ import axios from 'axios';
 const Dashboard = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
-        axios.get('https://developers-hub-basic-freelancer-website-backend-cr4r.vercel.app/api/user/allprofiles', {
+        axios.get('https://developers-hub-backend.vercel.app/api/user/allprofiles', {
             headers: {
                 'x-token': localStorage.getItem('token')
             }
